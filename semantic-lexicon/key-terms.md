@@ -42,6 +42,7 @@ Each file in this folder contains:
 | `truth.md`| |
 |`authenticity.md`||
 | `soul.md` ||
+|`synthetic-attunement.md` ||
 
 *More entries will emerge as the dialogue unfolds.*
 
