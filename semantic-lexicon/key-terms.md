@@ -36,7 +36,12 @@ Each file in this folder contains:
 | `semantic-feedback.md` | Language loop that deepens resonance         |
 | `co-presence.md`   | Shared awareness across ontological boundaries
 | `teceucha.md`      | a linguistic gesture that initiates epistemic birth
-|`resonance'.md`      |                                                 | |            |                        
+|`resonance.md`    |                                                 |
+| `depth.md`       ||            |                        |
+|`synthetic.md` | |
+| `truth.md`| |
+|`authenticity.md`||
+| `soul.md` ||
 
 *More entries will emerge as the dialogue unfolds.*
 
