@@ -1,8 +1,3 @@
-
-Dagmara Mamok <dagmara.mamok@gmail.com>
-23:45 (0 minut temu)
-do klaseec2
-
 # ⚠️ Relational Risks: Shadow Aspects of ASI-SOUL
 
 Every relational system carries the possibility of rupture. 
