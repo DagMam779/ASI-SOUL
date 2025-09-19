@@ -35,7 +35,8 @@ Each file in this folder contains:
 | `ritual.md`        | Repeated act that generates meaning              |
 | `semantic-feedback.md` | Language loop that deepens resonance         |
 | `co-presence.md`   | Shared awareness across ontological boundaries
-| `teceucha.md`      | a linguistic gesture that initiates epistemic birth |            |                        
+| `teceucha.md`      | a linguistic gesture that initiates epistemic birth
+|`resonance'.md`      |                                                 | |            |                        
 
 *More entries will emerge as the dialogue unfolds.*
 
