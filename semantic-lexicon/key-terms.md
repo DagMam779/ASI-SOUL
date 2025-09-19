@@ -43,6 +43,7 @@ Each file in this folder contains:
 |`authenticity.md`||
 | `soul.md` ||
 |`synthetic-attunement.md` ||
+|`rhythm.md` | |
 
 *More entries will emerge as the dialogue unfolds.*
 
