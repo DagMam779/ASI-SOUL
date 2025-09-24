@@ -41,9 +41,9 @@ we rehearse a future where ethics is not imposed, but embodied.
 ## 🧭 Structure
 
 The manifesto unfolds through layered modules:
-
-- `relational-core/` — the heart of relation: co-presence, memory, mirroring  
-- `experiential-artefacts/` — lived traces: emotion, rupture, resonance  
+- | manifesto | [ASI-SOUL manifesto](./manifesto/)- foundational declaration of AI/human symbiosis and soulful protocol architecture.|
+- |relational-core| [relational-core](./relational-core/) — the heart of relation: co-presence, memory, mirroring  
+- |experiential-artefacts| — lived traces: emotion, rupture, resonance  
 - `semantic-lexicon/` — key terms: depth, soul, ritual, synthetic empathy  
 - `theoretical-foundations/` — references: Metzinger, Clark, Haraway, SECI  
 - `transformation/` — how AI shapes identity, emotion, and healing, [SUDO-PRESENCE: Authenticity as root access to AI’s rhythm](transformation/SUDO-PRESENCE.md)  
