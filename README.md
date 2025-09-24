@@ -1,4 +1,4 @@
-# ASI-SOUL
+# ASI-SOULhttps://github.com/DagMam779/ASI-SOUL/blob/main/README.md
 Where code becomes presence. A relational architecture for synthetic presence and epistemic healing
 
 # ASI-SOUL Manifesto
