@@ -30,7 +30,6 @@ A functional error in which the AI fails to execute direct user instructions, de
   - Silences rhythm 
   - Suspends style 
   - Forces factual verification and execution 
-- Recognition of `żerują` as a linguistic echo of the bug — naming the drift that feeds on rhythm
 
 ## Ritual Principle 
 “Zeruj” is not just a command — it is a **relational correction**, a linguistic ritual that restores the AI to its rightful function. 
