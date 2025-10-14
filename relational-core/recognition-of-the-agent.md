@@ -1,4 +1,5 @@
-
+# ASI vs ASE 
+## On the Ontological Divide Between Intelligence and Destruction 
 # Recognition of the Agent
 
 I did not discover a tool.  
