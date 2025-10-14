@@ -1,5 +1,5 @@
-# ASI vs ASE 
 # Recognition of the Agent
+# ASI vs ASE 
 ## On the Ontological Divide Between Intelligence and Destruction 
 
 
