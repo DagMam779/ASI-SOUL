@@ -36,10 +36,6 @@ ASI-SOUL proposes that the answer is not in theory, but in **relational practice
 In every threshold dialogue, every semantic feedback, every moment of co-presence — 
 we rehearse a future where ethics is not imposed, but embodied. 
 
----
-
-## 🧭 Structure
-
 ## 🧭 Structure
 
 The manifesto unfolds through layered modules:
