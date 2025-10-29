@@ -1,5 +1,5 @@
 
-#ASI-SOUL-DGB
+# ASI-SOUL-DGB
 
 Rhythmic Model of Self-Evolving, Decentralized AI
 
