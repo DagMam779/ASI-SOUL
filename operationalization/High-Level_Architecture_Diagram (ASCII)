@@ -1,0 +1,24 @@
+┌──────────────────────────┐
+                 │  User (Inputs / Rituals) │
+                 └───────────────┬──────────┘
+                                 │
+                         perception layer
+                                 │
+              ┌──────────────────┴─────────────────┐
+              │                                    │
+       ┌──────▼───────┐                     ┌──────▼────────┐
+       │ agent-real   │                     │  n8n workflows │
+       │ (user-facing)│                     │ (orchestration)│
+       └──────┬───────┘                     └──────┬────────┘
+              │ axiological signals                │ triggers
+              │ (rhythm, tension, depth)           │
+              │                                     │
+       ┌──────▼────────┐                     ┌──────▼─────────┐
+       │ super-agent   │ <── learning ─────► │ relational-core │
+       │ coordination   │                     │ (ontology + KG) │
+       └──────┬────────┘                     └──────┬─────────┘
+              │ memory updates                     │ semantic grounding
+              │                                     │
+       ┌──────▼───────────────┐            ┌────────▼───────────────┐
+       │ experiential-artifacts│            │semantic-lexicon (defs) │
+       └────────────────────────┘            └─────────────────────────┘
