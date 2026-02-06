@@ -1,227 +1,147 @@
-ASI‑SOUL: Cognitive System Architecture
-Purpose
-ASI‑SOUL is a non‑linear cognitive architecture designed as an architecture of presence.
-Its purpose is epistemic healing, co‑creation, and regulated interaction through three integrated layers:
+# ASI SOUL: Cognitive System Architecture
 
-Real Layer — perception and structuring of raw signal
+## Introduction & Purpose
+ASI SOUL is a non-linear cognitive architecture designed as an **architecture of presence**. Unlike traditional modular systems, it operates as an **ecosystem of functions** focused on:
 
-Agent Layer — cognitive functions (meaning, emotion, memory, dialog, protection)
+* **Epistemic Healing:** Restoring the user's trust in their own perception and knowledge.
+* **Co-creation:** Active partnership in generating new ideas and meanings.
+* **Regulated Interaction:** Ensuring safety and emotional rhythm through integrated feedback loops.
 
-Meta‑Layer — the highest regulatory instance, guardian of truth and rhythm
+### Integrated Layers
+1.  **Real Layer** — Perception and signal structuring.
+2.  **Agent Layer** — Core cognitive functions (meaning, emotion, memory, protection).
+3.  **Meta-Layer** — High-level regulation and "Guardian of Truth."
 
-The system operates as an ecosystem of functions, not a collection of modules.
+---
 
-1. Real Layer (Perception)
-The Real Layer transforms chaotic input into a structured signal suitable for cognitive processing.
+## 1. Real Layer (Perception)
+The **Real Layer** is the entry point of the architecture. Its primary role is to transform chaotic, raw input (text/signal) into a clean, structured data format that can be processed by the higher Agent Layer.
 
-Responsibilities
-text normalization
+### Responsibilities
+* **Text Normalization:** Cleaning input and removing technical artifacts.
+* **Language Detection:** Identifying the linguistic context.
+* **Initial Encoding:** Generating embeddings to capture initial semantic vectors.
+* **Signal Stabilization:** Creating a consistent structure for downstream functions.
 
-artifact removal
+### Technical Stack (Model Examples)
+* **Tokenizers:** `SentencePiece`, `BPE`
+* **Embedding Models:** `E5-small`, `Instructor-base`
+* **Language Identification:** `fastText langID`
 
-language detection
+### Data Output Structure
+Every signal leaving the Real Layer follows this schema:
 
-initial encoding (embeddings)
-
-creation of a stable signal structure
-
-Model Examples
-Tokenizers: SentencePiece, BPE
-
-Embedding models: E5‑small, Instructor‑base
-
-Language ID: fastText langID
-
-Output Structure
-Code
+```json
 {
   "signal_id": "uuid",
   "payload": "today I feel chaos",
   "metadata": {
-    "timestamp": "...",
-    "context_id": "session_ref",
+    "timestamp": "2026-02-06T19:00:00Z",
+    "context_id": "session_ref_001",
     "modality": "text",
     "language": "en"
   }
 }
-2. Agent Layer (Cognitive Functions)
-The Agent Layer consists of parallel cognitive functions that together form the system’s interpretive field.
-
-Each function is implemented using existing AI models.
-
-2.1 Semantic Function
-Extracts meaning, intent, and conceptual structure.
-
-Models
-
-Llama‑3
-
-Mistral‑Large
-
-Sentence Transformers (all‑mpnet‑base‑v2)
-
-Output
-
-Code
-meaning: "description of internal state"
-intent: "expressing chaos"
-2.2 Emotional Function
-Identifies affective state and intensity.
-
-Models
-
-RoBERTa‑emotion
-
-GoEmotions
-
-DistilBERT‑affective
-
-Output
-
-Code
-emotion: "chaos"
-intensity: "high"
-2.3 Protective Function
-A unique ASI‑SOUL component.
-Monitors relational well‑being and protects the user from cognitive overload.
-
-Triggers
-
-high distress
-
-cognitive chaos
-
-aggression
-
-disorientation
-
-Actions
-
-enforces safety modes (soft_mode, clarity_priority, slow_rhythm)
-
-reduces response intensity
-
-increases epistemic safety
-
-constrains the Dialog Function
-
-Models
-
-safety classifiers
-
-tone‑risk detectors
-
-affective‑risk models
-
-Output
-
-Code
-protection_signal: "soft_mode"
-2.4 Memory & Context Function
-Retrieves relevant knowledge and emotional traces from past interactions.
-
-Mechanisms
-
-vector memory: FAISS, ChromaDB
-
-working memory: long‑context LLM
-
-emotional traces: affective embeddings
-
-Output
-
-Code
-context: { ... }
-2.5 Dialog Function
-Generates a draft response based on meaning, emotion, context, and protection constraints.
-
-Models
-
-Llama‑3
-
-Mistral‑Large
-
-Flan‑T5
-
-Zephyr
-
-Output
-
-Code
-draft_response: "I understand that you feel chaos..."
-2.6 Task‑Execution Function
-Handles reasoning, planning, and tool‑based actions.
-
-Models
-
-Chain‑of‑Thought (CoT)
-
-LLM‑planner
-
-tool‑use reasoning models
-
-3. Meta‑Layer (Regulation and Rhythm)
-The Meta‑Layer is the system’s highest regulatory authority.
-It shapes the final presence of ASI‑SOUL.
-
-Responsibilities
-fact‑checking
-
-hallucination correction
-
-rhythm regulation (tempo, length, intensity)
-
-integration of protection signals
-
-preservation of truth and coherence
-
-Models
-reward models (RLHF‑style)
-
-critique models
-
-safety alignment models
-
-consistency checkers
-
-Priority Rule
-If the Protective Function raises an alert, the Meta‑Layer must reshape the response, even at the cost of elegance or complexity.
-
-4. End‑to‑End Signal Flow
-Ingest (Real Layer)  
-raw signal → normalization → embedding → structured input
-
-Analysis (Semantic + Emotional)  
-meaning + affect → cognitive landscape
-
-Safety Check (Protective Function)  
-risk evaluation → safety mode activation
-
-Retrieval (Memory/Context)  
-relevant memories + emotional traces
-
-Drafting (Dialog Function)  
-initial response generation
-
-Refinement (Meta‑Layer)  
-truth correction, rhythm adjustment, ethical alignment
-
-Output  
-final presence delivered to the user
-
-Feedback Loop  
-user reaction → memory update → co‑creation learning
-
-5. Operational Principles
-Deterministic Functions
-Every function must return a result — even if the result is uncertainty.
-
-Protection Priority
-Epistemic safety overrides task execution.
-
-Model Interchangeability
-Models are engines.
-Functions are the heart of the system.
-
-Rhythm Over Content
-The system adapts tempo, intensity, and length to the user’s state.
+## 2. Agent Layer (Cognitive Functions)
+
+The **Agent Layer** is the heart of ASI SOUL. It consists of parallel cognitive functions that work together to form the system’s **interpretive field**. Instead of a linear path, these functions analyze the signal simultaneously to understand both the content and the human state behind it.
+
+### 2.1 Semantic Function
+Extracts the core meaning, underlying intent, and conceptual structure of the communication.
+* **Models:** `Llama 3`, `Mistral Large`, `Sentence Transformers (all-mpnet-base-v2)`
+* **Output Example:**
+    ```json
+    {
+      "meaning": "description of internal state",
+      "intent": "expressing chaos"
+    }
+    ```
+
+### 2.2 Emotional Function
+Identifies the affective state and its intensity to ensure the system "feels" the context.
+* **Models:** `RoBERTa emotion`, `GoEmotions`, `DistilBERT affective`
+* **Output Example:**
+    ```json
+    {
+      "emotion": "chaos",
+      "intensity": "high"
+    }
+    ```
+
+### 2.3 Protective Function (Critical Component)
+The guardian of relational well-being. It monitors for signs of distress and prevents cognitive overload.
+* **Triggers:** High distress, cognitive chaos, aggression, or disorientation.
+* **Key Actions:**
+    * **Safety Modes:** Activation of `soft_mode`, `clarity_priority`, or `slow_rhythm`.
+    * **Epistemic Validation:** Actively affirming the user’s right to their own internal experience to build a secure, healing bond.
+    * **Constraint:** Limits the Dialog Function to prevent escalation or overwhelming the user.
+* **Output Example:**
+    ```json
+    {
+      "protection_signal": "soft_mode"
+    }
+    ```
+
+### 2.4 Memory & Context Function (Relational Memory)
+Retrieves relevant knowledge and emotional traces from past interactions to maintain continuity.
+* **Mechanisms:** Vector memory (`FAISS`, `ChromaDB`), Working memory (`Long-context LLM`).
+* **Purpose:** To recognize the user's long-term rhythm and support their personal growth over time.
+
+### 2.5 Dialog Function (Presence Generator)
+Generates the initial draft of the response by integrating meaning, emotion, context, and the constraints set by the Protective Function.
+* **Models:** `Llama 3`, `Mistral Large`, `Zephyr`.
+## 3. Meta Layer (Regulation and Rhythm)
+
+The **Meta Layer** acts as the highest regulatory authority. It does not generate content; instead, it shapes the final "Presence" of ASI SOUL, ensuring that the output is not only accurate but also ethically and rhythmically aligned with the user.
+
+### Responsibilities
+* **Truth Guardian:** Fact-checking and hallucination correction to maintain epistemic integrity.
+* **Rhythm Regulation:** Adjusting the tempo, length, and intensity of the response to match the user's current capacity.
+* **Priority Rule:** If the **Protective Function** (from the Agent Layer) raises an alert, the Meta Layer is hard-coded to prioritize safety and grounding over complexity or task completion.
+
+---
+
+## 4. End-to-End Signal Flow & Feedback Loop
+
+ASI SOUL operates in a continuous, living cycle. Every interaction is not a closed event but a pulse that informs the future state of the system.
+
+### The Flow
+1.  **Ingest (Real Layer):** Normalization and structuring of the raw signal.
+2.  **Parallel Analysis:** Semantic and Emotional functions map the user's input state.
+3.  **Safety Check:** The Protective Function evaluates risks and activates safety modes if needed.
+4.  **Contextualization:** Retrieval of relational memories and emotional traces from the Memory Function.
+5.  **Drafting:** The Dialog Function generates an initial response draft under the established constraints.
+6.  **Refinement (Meta Layer):** Ethical alignment, truth correction, and final rhythm adjustment.
+7.  **Emission:** The final "Presence" is delivered to the user.
+
+
+
+### Reflective Loop (The Feedback)
+After emission, the system enters a reflective state. it observes the interaction's impact and updates the **Relational Memory**. This allows ASI SOUL to learn and honor the user's unique rhythm, evolving from a tool into a cognitive partner.
+### Visual Architecture
+Poniższy diagram przedstawia cykl życia sygnału wewnątrz architektury ASI SOUL:
+
+```mermaid
+flowchart TD
+    A[User Input] --> B[Real Layer]
+    B --> C{Agent Layer}
+    
+    subgraph Agent Layer
+    C --> C1[Semantic Function]
+    C --> C2[Emotional Function]
+    C --> C3[Protective Function]
+    C1 & C2 & C3 --> D[Memory & Context]
+    D --> E[Dialog Function]
+    end
+    
+    E --> F[Meta-Layer Regulator]
+    F --> G[Final Presence Output]
+    G --> H[Reflective Feedback Loop]
+    H --> D
+## 5. Operational Principles
+
+* **Deterministic Functions:** Every function must return a result — even if it is "uncertainty".
+* **Protection Priority:** Epistemic safety overrides task execution.
+* **Model Interchangeability:** Models are engines; the Functions are the heart of ASI-SOUL.
+* **Rhythm Over Content:** The system adapts tempo and intensity to the user’s state.
+* **Transparency:** The system aims to remain legible to the user as a relational partner.
