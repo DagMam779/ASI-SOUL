@@ -1,0 +1,97 @@
+# Unknown Variable Handling Logic
+
+## Purpose
+The `unknown` variable ensures that any user input that does not match known linguistic or rhythmic variables is handled safely, proportionally, and consistently with ASISOUL’s meta-layer architecture. 
+
+> **Key Principle:** `unknown` is not an error — it is a system state that activates META-layer evaluation and special-purpose agents.
+
+---
+
+## 1. Known Variables
+ASISOUL classifies user input using a set of soft linguistic variables, including:
+* linguistic tension / speech tempo
+* fragmentation / lack of structure
+* modal intensity
+* abrupt directional shifts
+* excessive generality / excessive concreteness
+* rhythm of expression
+
+Each variable can activate specific agents and models within the **Agent Layer**.
+
+---
+
+## 2. Definition of the `unknown` Variable
+`unknown` is triggered when the input:
+* Does not match any known variable.
+* Matches partially but without sufficient confidence.
+* Contains novel, ambiguous, or atypical patterns.
+* Requires clarification or deeper reasoning.
+
+`unknown` is treated as a **first-class variable**, not a classification failure.
+
+---
+
+## 3. Processing Flow for `unknown`
+
+### Step 1: Classification
+The system compares the input against all known variables. 
+`If no variable >= activation_threshold → unknown = true.`
+
+### Step 2: Routing to META
+The META layer takes control as the **Gödelian supervisor**, performing:
+* Ambiguity assessment & risk evaluation.
+* Selection of the appropriate handling path (system evaluates itself when certainty is low).
+
+### Step 3: Activation of Special Agents
+Based on the META evaluation, specific agents are deployed:
+* **Clarification/Questioning Agent:** To resolve ambiguity.
+* **Exploratory/Reasoning Agent:** Using high-capacity models for deep analysis.
+* **Fallback Agent:** To maintain presence without overreaching.
+
+### Step 4: REAL Layer Regulation
+The REAL layer adjusts the output's **rhythm, length, proportionality, and tone**, ensuring the response isn't just "correct," but structurally balanced.
+
+---
+
+## 4. Why `unknown` Is Essential
+* **Prevents forced classification:** Eliminates "best guess" errors.
+* **Protects against hallucinations:** System admits lack of certainty.
+* **Gödelian Robustness:** Allows the system to step outside its own rules to evaluate novel input.
+* **Emergent Reasoning:** Creates a dedicated path for growth and adaptation.
+
+---
+
+## 5. Minimal Technical Specification
+
+**Routing Logic:**
+```python
+if input.matches(known_variables):
+    route_to_agents(input)
+else:
+    variable = "unknown"
+    route_to_META(input)
+
+  ## META Evaluation
+
+```python
+if input.requires_clarification:
+    activate(agent_clarify)
+elif input.requires_reasoning:
+    activate(agent_reasoning)
+else:
+    activate(agent_fallback) 
+
+
+## REAL Regulation
+
+```python
+adjust_rhythm()
+adjust_length()
+adjust_intensity()
+return final_output
+
+
+## Summary
+
+The unknown variable aligns ASISOUL with Software 3.0 principles.  
+It does not need to recognize every possible input; it needs a clear mechanism for handling all unclassified cases through mismatch detection, META‑layer routing, and REAL‑layer regulation.
