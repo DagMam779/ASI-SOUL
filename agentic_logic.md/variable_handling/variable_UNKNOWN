@@ -90,8 +90,34 @@ adjust_length()
 adjust_intensity()
 return final_output
 
+## 6. Advanced Agentic Dynamics
 
-## Summary
+### 6.1 Cross-Variable Interaction
+In the interpretive field, variables do not exist in isolation. They exhibit **interdependent weighting**:
+* **Amplification Loop:** High `fragmentation` combined with high `linguistic tension` automatically increases the weight of the `unknown` variable.
+* **Stabilization Effect:** A steady `rhythm of expression` can mitigate the alert level of `abrupt directional shifts`, preventing premature escalation to the META layer.
 
-The unknown variable aligns ASISOUL with Software 3.0 principles.  
-It does not need to recognize every possible input; it needs a clear mechanism for handling all unclassified cases through mismatch detection, META‑layer routing, and REAL‑layer regulation.
+### 6.2 Adaptive Thresholding
+Thresholds for agent activation are not static; they are governed by the **Relational Memory**:
+* **Baseline Calibration:** The system establishes a "Normal Rhythm" for each unique user.
+* **Dynamic Sensitivity:** If the user is in a known state of crisis, the sensitivity of the `Protective Function` increases, lowering the activation threshold for `soft_mode`.
+* **Uncertainty Scaling:** As the `unknown` variable persists over multiple turns, the system increases the depth of the reasoning models activated by the META layer.
+
+### 6.3 Epistemic Feedback Loop
+When `unknown = true`, the system initiates a **Learning Pulse**:
+1. **Observation:** How does the user respond to the "exploratory" or "questioning" agent?
+2. **Integration:** If the user clarifies the ambiguity, the system maps this new pattern to a `known_variable` for future encounters.
+3. **Evolution:** This ensures that the system’s "Known Universe" expands, reducing reliance on the `unknown` fallback over time while maintaining safety.
+
+---
+
+## 7. Summary
+The `unknown` variable and advanced agentic dynamics align ASISOUL with **Software 3.0 principles**. The system does not require an exhaustive list of cases; instead, it relies on a clear mechanism:
+
+* **Classify** → if mismatch → mark as `unknown`.
+* **Route** to META for high-order evaluation.
+* **Activate** special agents or reasoning models based on dynamic thresholds.
+* **Regulate** through the REAL layer to produce a proportional, safe, and evolving output.
+
+This design is a cornerstone of ASISOUL’s robustness and its capacity for genuine epistemic presence.
+
