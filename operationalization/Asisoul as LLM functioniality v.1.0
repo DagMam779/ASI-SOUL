@@ -1,0 +1,97 @@
+┌────────────────────────────────────┐
+│          USER / DZIENNIK           │
+│ Gemini / Copilot / Claude / Notes  │
+└──────────────────┬─────────────────┘
+                   │
+                   │ tekst
+                   ▼
+
+┌────────────────────────────────────┐
+│      ASISOUL ENTRY FUNCTION        │
+│                                    │
+│   "Rozpoznaj mój stan"             │
+│   "Sprawdź rytm"                   │
+│   "Pokaż możliwe napięcia"         │
+│   "Zaproponuj kierunek"            │
+└──────────────────┬─────────────────┘
+                   │
+                   ▼
+
+┌────────────────────────────────────┐
+│         PERCEPTION LAYER           │
+│                                    │
+│ ekstrakcja sygnałów:              │
+│ - emocje                          │
+│ - napięcia                        │
+│ - konflikty                       │
+│ - powracające tematy              │
+│ - energia                         │
+│ - sprawczość                      │
+└──────────────────┬─────────────────┘
+                   │
+                   ▼
+
+┌────────────────────────────────────┐
+│           ASISOUL RAG              │
+│                                    │
+│  ontology/                         │
+│    states/                         │
+│    rhythms/                        │
+│    transitions/                    │
+│    rituals/                        │
+│    recommendations/                │
+│                                    │
+│  semantic-lexicon/                 │
+│  relational-core/                  │
+└──────────────────┬─────────────────┘
+                   │
+                   ▼
+
+┌────────────────────────────────────┐
+│         ORCHESTRATION (n8n)        │
+│                                    │
+│ równoległe zapytania:              │
+│                                    │
+│ GPT        → interpretacja         │
+│ Claude     → krytyka               │
+│ Gemini     → alternatywa           │
+│ Local LLM  → prywatność            │
+└──────────────────┬─────────────────┘
+                   │
+                   ▼
+
+┌────────────────────────────────────┐
+│      CONSENSUS / SYNTHESIS         │
+│                                    │
+│ hipotezy stanów                    │
+│ wykryte rytmy                      │
+│ napięcia                           │
+│ kierunki zmiany                    │
+└──────────────────┬─────────────────┘
+                   │
+                   ▼
+
+┌────────────────────────────────────┐
+│       ASISOUL FEEDBACK ENGINE      │
+│                                    │
+│ NIE DIAGNOZA                       │
+│ NIE OCENA                          │
+│                                    │
+│ tylko:                             │
+│                                    │
+│ - hipotezy                         │
+│ - lustro                           │
+│ - pytania                          │
+│ - rekomendacje                     │
+└──────────────────┬─────────────────┘
+                   │
+                   ▼
+
+┌────────────────────────────────────┐
+│      EXPERIENTIAL ARTIFACTS        │
+│                                    │
+│ zapis sesji                        │
+│ zapis transformacji                │
+│ trajektoria zmian                  │
+│ historia rytmów                    │
+└────────────────────────────────────┘
